@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #272822;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+button {
+    flex: 1;
+    height: 100%;
+    color: #A6E22E;
+    background: inherit;
+    font-size: 10vh;
+
+    cursor: pointer;
+}
+
+button, .info, body {
+    border: 3px solid #AE81FF;
+}
+
+.info {
+    color: #F8F8F2;
+    font-family: Courier New, Courier, monospace, sans-serif;
+    font-size: 2vh;
+    padding: 10px;
+    flex: 1;
+}
+
+.info h1 {
+    color: #F92672;
+    font-weight: bold;
+    font-size: 4vh;
+}
