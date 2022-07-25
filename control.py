@@ -14,14 +14,14 @@ current_turn = 1  # 0 = left, 1 = none, 2 = right
 
 def forward(speed=SPEED):
     global current_drive
-    drive.run(Adafruit_MotorHAT.FORWARD)
+    drive.run(Adafruit_MotorHAT.BACKWARD)
     drive.setSpeed(speed)
     current_drive = 2
 
 
 def backward(speed=SPEED):
     global current_drive
-    drive.run(Adafruit_MotorHAT.BACKWARD)
+    drive.run(Adafruit_MotorHAT.FORWARD)
     drive.setSpeed(speed)
     current_drive = 0
 
